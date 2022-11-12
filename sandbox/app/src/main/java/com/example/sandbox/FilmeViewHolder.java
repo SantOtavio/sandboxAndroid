@@ -1,21 +1,24 @@
-package com.example.recyclerviewcomjava;
+package com.example.sandbox;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class JogoViewHolder extends RecyclerView.ViewHolder {
+public class FilmeViewHolder extends RecyclerView.ViewHolder {
 
-    TextView nome, plataforma;
+    TextView nome;
+//    ImageView imagem;
     CardView cardView;
 
-    public JogoViewHolder(@NonNull View itemView) {
+    public FilmeViewHolder(@NonNull View itemView) {
         super(itemView);
         nome = itemView.findViewById(R.id.nome);
-        plataforma = itemView.findViewById(R.id.plataforma);
         cardView = itemView.findViewById(R.id.cardView);
+//        imagem = itemView.findViewById(R.id.imagemFilme);
     }
 }
