@@ -40,8 +40,7 @@ public class FilmeAdapter extends RecyclerView.Adapter<FilmeViewHolder> {
     public void onBindViewHolder(@NonNull FilmeViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Filme filme = itens.get(position);
         holder.nome.setText(filme.getNome());
-//        holder.imagem.setImageResource(filme.getFoto());
-        holder.cardView.setOnClickListener(view -> click.click(view, itens.get(position)));
+        holder.cardView.setOnClickListener(view -> click.click(view, itens.get(position), position));
     }
 
     @Override

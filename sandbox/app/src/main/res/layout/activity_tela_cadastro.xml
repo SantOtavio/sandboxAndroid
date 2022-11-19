@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastro">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="29dp"
+        android:text="Cadastro de Filmes"
+        app:layout_constraintBottom_toTopOf="@+id/botaoFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nomeFilmeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/sinopseFilmeText"
+        app:layout_constraintEnd_toEndOf="@+id/sinopseFilmeText"
+        app:layout_constraintTop_toBottomOf="@+id/botaoFoto" />
+
+    <EditText
+        android:id="@+id/sinopseFilmeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Sinopse"
+        app:layout_constraintBottom_toTopOf="@+id/editoraFilmeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeFilmeText" />
+
+    <EditText
+        android:id="@+id/editoraFilmeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Editora"
+        app:layout_constraintBottom_toTopOf="@+id/anoText"
+        app:layout_constraintEnd_toEndOf="@+id/sinopseFilmeText"
+        app:layout_constraintTop_toBottomOf="@+id/sinopseFilmeText" />
+
+    <EditText
+        android:id="@+id/anoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="186dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Ano"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editoraFilmeText"
+        app:layout_constraintTop_toBottomOf="@+id/editoraFilmeText" />
+
+    <Button
+        android:id="@+id/botaoFoto"
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/btn_img_rounded"
+        android:text="Foto"
+        app:layout_constraintBottom_toTopOf="@+id/nomeFilmeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoFilme"
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoFoto"
+        app:layout_constraintEnd_toEndOf="@+id/botaoFoto"
+        app:layout_constraintStart_toStartOf="@+id/botaoFoto"
+        app:layout_constraintTop_toTopOf="@+id/botaoFoto"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/botaoCadastrarFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
